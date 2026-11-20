@@ -42,3 +42,9 @@ next-env.d.ts
 
 # claude code (config local del preview)
 /.claude/
+
+# cache
+.cache
+.eslintcache
+.turbo
+.swc
