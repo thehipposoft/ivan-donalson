@@ -1,0 +1,95 @@
+/* =============================================================
+   Iván Donalson — Design tokens
+   Fuente: Guía de marca (GUÍA_Iván.pdf)
+   Los HEX son aproximaciones de pantalla de cada Pantone.
+   ============================================================= */
+
+:root {
+  /* ---------- Colores principales ---------- */
+  /* PANTONE 7536 C — taupe */
+  --brand-taupe: #a69f88;
+  --brand-taupe-300: #c4bead;
+  --brand-taupe-100: #e6e3da;
+
+  /* PANTONE BLACK C — ink */
+  --brand-ink: #2d2926;
+  --brand-ink-800: #3d3935; /* fondo oscuro permitido */
+  --brand-ink-600: #5e5955;
+
+  /* PANTONE 5493 C — sage */
+  --brand-sage: #84a9ae; /* fondo de color permitido */
+  --brand-sage-300: #b4cdd0;
+  --brand-sage-100: #e3edee;
+
+  /* ---------- Colores secundarios ---------- */
+  /* PANTONE COOL GRAY 3 C */
+  --brand-gray: #c8c9c7;
+  --brand-gray-100: #ececeb;
+
+  /* PANTONE 7707 C — teal profundo */
+  --brand-teal: #00677f;
+  --brand-teal-300: #5d9aab;
+
+  /* Neutros */
+  --brand-paper: #f5f3ee;
+  --brand-white: #ffffff;
+
+  /* ---------- Roles semánticos ---------- */
+  --surface: var(--brand-paper);
+  --surface-inverse: var(--brand-ink-800);
+  --surface-accent: var(--brand-sage);
+  --surface-muted: var(--brand-gray); /* Cool Gray 3 C */
+  --text: var(--brand-ink);
+  --text-muted: var(--brand-ink-600);
+  --text-inverse: var(--brand-paper);
+  --text-inverse-muted: var(--brand-taupe-300);
+  --accent: var(--brand-taupe);
+  --link: var(--brand-teal);
+  --border: color-mix(in srgb, var(--brand-ink) 14%, transparent);
+  --border-inverse: color-mix(in srgb, var(--brand-paper) 16%, transparent);
+  --focus-ring: var(--brand-teal);
+
+  /* ---------- Tipografía ----------
+     Gotham → Montserrat (sustituto en Google Fonts)
+     Berthold Akzidenz Grotesk → Archivo (eje wdth para condensada)
+     Las variables --font-montserrat / --font-archivo las inyecta next/font. */
+  --font-family-primary: var(--font-montserrat), "Gotham", ui-sans-serif, system-ui, sans-serif;
+  --font-family-secondary: var(--font-archivo), "Akzidenz-Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-condensed-stretch: 72%;
+
+  --letter-display: 0.08em;
+  --letter-eyebrow: 0.24em;
+
+  /* ---------- Layout ---------- */
+  --site-max-width: 80rem;
+  --header-height: 4.5rem;
+  --gutter: 1.5rem;
+
+  /* ---------- Motion (CSS) ---------- */
+  --motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+
+  /* ---------- Motion (GSAP) — leídos con lib/motion.ts ---------- */
+  --gsap-duration: 0.9;
+  --gsap-duration-slow: 1.4;
+  --gsap-duration-fast: 0.45;
+  --gsap-stagger: 0.08;
+  --gsap-distance: 32;
+  --gsap-ease: power3.out;
+  --gsap-ease-in-out: power2.inOut;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 2rem;
+    --header-height: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --gutter: 3rem;
+  }
+}

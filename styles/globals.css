@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@import "./variables.css";
+@import "lenis/dist/lenis.css";
+
+/* Tokens → utilidades de Tailwind (bg-ink, text-taupe, font-primary, etc.) */
+@theme inline {
+  --color-taupe: var(--brand-taupe);
+  --color-taupe-300: var(--brand-taupe-300);
+  --color-taupe-100: var(--brand-taupe-100);
+  --color-ink: var(--brand-ink);
+  --color-ink-800: var(--brand-ink-800);
+  --color-ink-600: var(--brand-ink-600);
+  --color-sage: var(--brand-sage);
+  --color-sage-300: var(--brand-sage-300);
+  --color-sage-100: var(--brand-sage-100);
+  --color-gray: var(--brand-gray);
+  --color-gray-100: var(--brand-gray-100);
+  --color-teal: var(--brand-teal);
+  --color-teal-300: var(--brand-teal-300);
+  --color-paper: var(--brand-paper);
+
+  --color-surface: var(--surface);
+  --color-surface-inverse: var(--surface-inverse);
+  --color-surface-muted: var(--surface-muted);
+  --color-fg: var(--text);
+  --color-fg-muted: var(--text-muted);
+  --color-fg-inverse: var(--text-inverse);
+  --color-fg-inverse-muted: var(--text-inverse-muted);
+  --color-line: var(--border);
+  --color-line-inverse: var(--border-inverse);
+
+  --font-primary: var(--font-family-primary);
+  --font-secondary: var(--font-family-secondary);
+  --font-sans: var(--font-family-primary);
+
+  --tracking-display: var(--letter-display);
+  --tracking-eyebrow: var(--letter-eyebrow);
+
+  --ease-brand: var(--motion-ease-out);
+  --ease-brand-in-out: var(--motion-ease-in-out);
+}
+
+/* Akzidenz condensada (Archivo con eje de ancho) */
+@utility font-condensed {
+  font-family: var(--font-family-secondary);
+  font-stretch: var(--font-condensed-stretch);
+}
+
+/* Etiquetas pequeñas en mayúsculas — referencias, balazos */
+@utility eyebrow {
+  font-family: var(--font-family-secondary);
+  font-stretch: var(--font-condensed-stretch);
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: var(--letter-eyebrow);
+  text-transform: uppercase;
+}
+
+@utility container-site {
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+@layer base {
+  html {
+    scroll-padding-top: var(--header-height);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--surface);
+    color: var(--text);
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--brand-sage-300);
+    color: var(--brand-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Estado inicial de la intro del hero (GSAP lo revela) — evita el flash antes de hidratar */
+  [data-hero-item],
+  [data-hero-ring],
+  [data-char],
+  [data-line] {
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
