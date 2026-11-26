@@ -16,7 +16,7 @@ export function Biography() {
       className="bg-ink pb-28 pt-[calc(var(--header-height)+2.5rem)] text-paper md:pb-40 md:pt-[calc(var(--header-height)+4rem)]"
     >
       <RevealScope className="container-site flex flex-col items-center text-center">
-        {/* Recorte: sin la parte alta del follaje y con zoom hacia Iván */}
+        {/* Recorte: sin la parte alta del follaje y con zoom hacia Ivan */}
         <div
           data-reveal
           className="relative aspect-4/5 w-full max-w-xl overflow-hidden"

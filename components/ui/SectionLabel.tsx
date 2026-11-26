@@ -4,7 +4,7 @@ type SectionLabelProps = {
   className?: string;
 };
 
-/** Etiqueta editorial de sección: "01 —— Sobre Iván" */
+/** Etiqueta editorial de sección: "01 —— Sobre Ivan" */
 export function SectionLabel({ index, label, className = "" }: SectionLabelProps) {
   return (
     <p className={`eyebrow flex items-center gap-4 ${className}`}>

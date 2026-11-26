@@ -33,7 +33,7 @@ export function Footer({ variant = "home" }: FooterProps) {
         <div className="container-site flex flex-col gap-8 py-10 md:flex-row md:items-center md:justify-between md:py-12">
           <Link
             href={routes.home}
-            aria-label="Iván Donalson — ir al inicio"
+            aria-label="Ivan Donalson — ir al inicio"
             className="self-start"
           >
             <Logo alt="" tone="taupe" className="h-12 w-auto md:h-14" />

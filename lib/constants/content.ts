@@ -7,15 +7,15 @@ import type { Pillar } from "@/types";
 
 export const heroContent = {
   eyebrow: "Meditación · Mentalismo · Conocimiento",
-  titleLines: ["Iván", "Donalson"],
+  titleLines: ["Ivan", "Donalson"],
   // TODO(copy)
   lead: "Un espacio para entrenar la mente, explorar la percepción y volver a lo esencial.",
   primaryCta: "Ver canales oficiales",
-  secondaryCta: "Conocé a Iván",
+  secondaryCta: "Conocé a Ivan",
 } as const;
 
 export const aboutContent = {
-  eyebrow: "Sobre Iván",
+  eyebrow: "Sobre Ivan",
   title: "Sobre mí",
   paragraphs: [
     "Siempre me he considerado un buscador. En este maravilloso camino que es la vida, aprendo de diferentes visiones y enseñanzas, encontrando siempre un equilibrio entre la modernidad y la ancestralidad. Creo que encontrar el equilibrio dentro de nosotros es la clave para la felicidad.",
@@ -27,7 +27,7 @@ export const aboutContent = {
     "Maestro de Meditación",
     "Facilitador de Procesos de Consciencia",
   ],
-  imageAlt: "Retrato de Iván Donalson",
+  imageAlt: "Retrato de Ivan Donalson",
   bioLink: { label: "Leer biografía completa", href: "/biografia" },
 } as const;
 
@@ -57,7 +57,7 @@ export const featuredProject = {
   title: "Descubre",
   titleEmphasis: "Sendero Åureo",
   description:
-    "El proyecto de Iván y Gianny donde se comparten programas en línea, talleres, frecuencias personalizadas y más.",
+    "El proyecto de Ivan y Gianny donde se comparten programas en línea, talleres, frecuencias personalizadas y más.",
   cta: "Visitar Sendero Åureo",
   href: "https://www.senderoaureo.com/",
 } as const;

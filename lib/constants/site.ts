@@ -1,11 +1,11 @@
 import type { NavItem } from "@/types";
 
 export const site = {
-  name: "Iván Donalson",
+  name: "Ivan Donalson",
   tagline: "Meditación · Mentalismo · Conocimiento",
   // TODO(copy): descripción SEO definitiva
   description:
-    "Sitio oficial de Iván Donalson. Meditación, mentalismo y conocimiento: conocé su trabajo y todos sus canales oficiales.",
+    "Sitio oficial de Ivan Donalson. Meditación, mentalismo y conocimiento: conocé su trabajo y todos sus canales oficiales.",
 } as const;
 
 export const sectionIds = {
@@ -20,7 +20,7 @@ export const routes = {
 } as const;
 
 export const navItems: NavItem[] = [
-  { label: "Sobre Iván", href: `#${sectionIds.about}` },
+  { label: "Sobre Ivan", href: `#${sectionIds.about}` },
   { label: "Biografía", href: routes.biography },
   { label: "Canales", href: `#${sectionIds.contact}` },
 ];

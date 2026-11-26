@@ -127,7 +127,7 @@ export function Header({
         <div className="container-site relative z-[55] flex h-(--header-height) items-center justify-between">
           <Link
             href={isPage ? routes.home : `#${sectionIds.hero}`}
-            aria-label="Iván Donalson — volver al inicio"
+            aria-label="Ivan Donalson — volver al inicio"
             onClick={close}
             className="rounded-sm"
           >

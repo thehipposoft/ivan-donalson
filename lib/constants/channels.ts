@@ -1,6 +1,6 @@
 import type { Channel } from "@/types";
 
-/** Canales oficiales de Iván Donalson */
+/** Canales oficiales de Ivan Donalson */
 export const channels: Channel[] = [
   {
     id: "instagram",
@@ -19,7 +19,7 @@ export const channels: Channel[] = [
   {
     id: "spotify",
     name: "Spotify",
-    handle: "Iván Donalson",
+    handle: "Ivan Donalson",
     description: "Meditaciones y podcast",
     href: "https://open.spotify.com/intl-es/artist/13AiWNMLpKYo0wSPSAiBUg",
   },

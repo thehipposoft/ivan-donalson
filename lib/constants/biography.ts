@@ -1,11 +1,11 @@
 /** Copy de la página de biografía (/biografia) */
 export const biography = {
-  title: "Iván Donalson — Mi camino",
-  imageAlt: "Iván Donalson mirando hacia lo alto, al pie de un gran árbol en el bosque",
+  title: "Ivan Donalson — Mi camino",
+  imageAlt: "Ivan Donalson mirando hacia lo alto, al pie de un gran árbol en el bosque",
   /** Foto con Giannina, debajo del párrafo de Sendero Áureo (índice en paragraphs) */
   coupleImage: {
     afterParagraph: 6,
-    alt: "Iván Donalson junto a su esposa, Giannina Leyva",
+    alt: "Ivan Donalson junto a su esposa, Giannina Leyva",
   },
   paragraphs: [
     "Desde niño me han fascinado los misterios de la existencia, la consciencia y las diferentes maneras en que los seres humanos interpretamos la realidad. En 1996 leí El Kybalión, un libro que amplió una curiosidad que ya me acompañaba desde la infancia y que me llevó a profundizar en el esoterismo, la filosofía, la espiritualidad y distintas tradiciones de conocimiento. Con el tiempo, aquella inquietud se convirtió en una parte fundamental de mi vida, acompañándome en mis estudios, mis proyectos y mis experiencias.",

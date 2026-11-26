@@ -7,7 +7,7 @@ import { Biography, biographyId } from "@/components/sections/Biography";
 export const metadata: Metadata = {
   title: "Biografía",
   description:
-    "Mi camino: la búsqueda, la formación, la música, los viajes y los proyectos de Iván Donalson.",
+    "Mi camino: la búsqueda, la formación, la música, los viajes y los proyectos de Ivan Donalson.",
 };
 
 export default function BiographyPage() {
